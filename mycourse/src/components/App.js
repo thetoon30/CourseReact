@@ -4,7 +4,7 @@ import Background from '../assets/img/education.jpg';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  let sectionStyle = {
+  let posterImage = {
     backgroundImage: `url(${Background})`,
     width: '100%',
     minHeight: "321px",
@@ -60,11 +60,11 @@ function App() {
       <div className="content-course course-academic none-credit-mode">
         <div className="container">
           <div className="row content-course-row">
-            <div className="video-container content-course-card -padding">
+            <div className="video-container content-course-card -padding" style={{ marginBottom: "350px"}}>
               <div className="video preview-video-card">
                 <div className="video-js vjs-fluid intro-video-dimensions"
                   id="intro-video" style={{ outline: "currentcolor none medium" }}>
-                  <div className="vjs-poster" style={sectionStyle}>
+                  <div className="vjs-poster" style={posterImage}>
                   </div>
                 </div>
               </div>
