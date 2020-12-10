@@ -4,9 +4,15 @@ import Background from './img/education.jpg';
 import React, { useState, useEffect } from 'react';
 
 function App() {
+  let sectionStyle = {
+    backgroundImage: `url(${Background})`,
+    width: '100%',
+    minHeight: "321px",
+  };
+  
   return (
     <div id="course-detail-page" className="theme-skilllane">
-       <div className="banner-course-detail _academic _tu-banner">
+      <div className="banner-course-detail _academic _tu-banner">
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-lg-11">
@@ -50,6 +56,23 @@ function App() {
           </div>
         </div>
       </div>
+      
+      <div className="content-course course-academic none-credit-mode">
+        <div className="container">
+          <div className="row content-course-row">
+          <div className="video-container content-course-card -padding">
+              <div className="video preview-video-card">
+                <div className="video-js vjs-fluid intro-video-dimensions"
+                  id="intro-video" style={{ outline: "currentcolor none medium" }}>
+                  <div className="vjs-poster" style={sectionStyle}>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
