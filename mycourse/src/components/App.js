@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './App.css';
-import Background from './img/education.jpg';
+import Background from '../assets/img/education.jpg';
 import React, { useState, useEffect } from 'react';
 
 function App() {
