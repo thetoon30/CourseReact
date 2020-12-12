@@ -21,6 +21,20 @@ function ContentTab() {
           <div className="row content-course-row">
             <div className="col-lg-9 col-xs-12 course-detail-card -padding">
               <div role="tabpanel" className="content-course-tabs">
+              <ul className="nav nav-tabs" role="tablist">
+                  {labelTab.map(val => (
+                    <li key={val.id} className={val.className + ' ' + val.to}>
+                      <a href="#">{val.name}</a>
+                    </li>
+                  ))}
+                </ul>
+                <div className="tab-content">
+                  {labelTab.map(val => (
+                    <div key={val.id} role="tabpanel" className={'tab-pane ' + val.to} id={val.id}>
+                      {val.name}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
