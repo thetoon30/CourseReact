@@ -9,6 +9,12 @@ function ContentTab() {
       { id: 'reviews', name: "รีวิว", to: "", className: "item-tab" }
     ];
 
+    const [labelTab, setlabelTab] = useState([]);
+    
+    useEffect(() => {
+      setlabelTab(tab);
+    }, [])
+
     return (
         <div id="courseDetailContent" className="content-course">
         <div className="container">
