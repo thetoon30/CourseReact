@@ -15,6 +15,19 @@ function ContentTab() {
       setlabelTab(tab);
     }, [])
 
+    function changeTab(id) {
+      let foundIndex = tab.findIndex(x => x.id === id);
+      for (let index = 0; index < tab.length; index++) {
+        if (foundIndex === index) {
+          tab[index].to = "active";
+        } else {
+          tab[index].to = "";
+        }
+      }
+
+      setlabelTab(tab);
+    }
+
     return (
         <div id="courseDetailContent" className="content-course">
         <div className="container">
@@ -23,8 +36,8 @@ function ContentTab() {
               <div role="tabpanel" className="content-course-tabs">
               <ul className="nav nav-tabs" role="tablist">
                   {labelTab.map(val => (
-                    <li key={val.id} className={val.className + ' ' + val.to}>
-                      <a href="#">{val.name}</a>
+                    <li key={val.id} className={val.className + ' ' + val.to} onClick={() => changeTab(val.id)}>
+                      <a href="#" onClick={e => e.preventDefault()}>{val.name}</a>
                     </li>
                   ))}
                 </ul>
