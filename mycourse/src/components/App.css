@@ -293,7 +293,7 @@ p {
 }
 
 .content-course .course-glance-card {
-    min-height: calc(100% - 5px);
+    min-height: calc(100% - 40px);
     padding: 0px 15px 15px;
     border-style: solid;
     border-width: 1px;
@@ -347,7 +347,7 @@ p {
 }
 
 .content-course .course-glance-card .glance-card-head .glance-purchase-detail .glance-purchase-enroll .glance-purchase-price-normal {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 8px;
 }
 
@@ -15431,4 +15431,12 @@ body {
         left: 0px;
         margin-top: 25px;
     }
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
 }

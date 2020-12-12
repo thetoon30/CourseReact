@@ -4,7 +4,7 @@ function ContentCourse() {
     let posterImage = {
         backgroundImage: `url(${Background})`,
         width: '100%',
-        minHeight: "321px",
+        minHeight: "320px",
     };
 
     return (
@@ -32,11 +32,11 @@ function ContentCourse() {
                                                 <div className="glance-purchase-price">
                                                     <span className="glance-purchase-price-normal ">
                                                         1,500 บาท
-                            </span>
+                                                    </span>
                                                 </div>
                                                 <button className="enroll-button audit-button">
                                                     ชำระเงินเรียนไม่เก็บหน่วยกิต
-                          </button>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
